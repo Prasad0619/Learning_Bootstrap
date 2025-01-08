@@ -60,6 +60,7 @@
 
       <div class="row">
 
+        <!-- Products  -->
         <div class="col-md-4">
           <div class="card">
             <img src="/Images/img1.jpg" class="card-img-top" alt="...">
@@ -67,7 +68,7 @@
               <h5 class="card-title">Master Bedroom</h5>
               <p class="card-text">Spacious master bedroom featuring a king-sized bed, ensuite bathroom, elegant decor,
                 and serene ambiance.</p>
-              <a href="#" class="btn btn-primary">Book now</a>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">Book now</a>
             </div>
           </div>
         </div>
@@ -98,11 +99,12 @@
       <h2 class="text-center mt-4 mb-4">Food Menu</h2>
       <div class="row">
 
+        <!-- Food Menu  -->
         <div class="col-md-3">
           <div class="card">
             <img src="/Images/Cake.png" class="card-img-top" alt="...">
             <div class="card-body text-center">
-              <a href="#" class="btn btn-primary">Order now</a>
+              <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Order now</a>
             </div>
           </div>
         </div>
@@ -131,9 +133,113 @@
           </div>
         </div>
 
-      </div>
+        <!-- Cake Modal  -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Classic Vanilla Cake Recipe:</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="contain">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <img src="/Images/Cake.png" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                      Preheat oven to 180°C. Mix 2 cups flour, 1½ tsp baking powder, and a pinch of salt. Cream 1 cup sugar with ½ cup butter, then blend 2 eggs and 1 tsp vanilla. Alternate adding dry mix and ¾ cup milk. Pour into greased pan, bake 30 minutes. Cool, frost.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Master Bedroom  -->
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabe2" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Master Bedroom info:</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="contain">
+                  <div class="row">
+
+                    <div class="col-md-6">
+                      <img src="/Images/img1.jpg" class="img-fluid">
+                    </div>
+
+                    <div class="col-md-6">
+                      <table class="table table-striped mt-4 table-bordered table-hover table-dark">
+                        <thead>
+                            <tr>
+                              <th>#</th>
+                                <th>Service</th>
+                                <th>Description</th>
+                                <th>Availability</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                            <tr>
+                              <td>1</td>
+                                <td>Room Service</td>
+                                <td>Order meals and drinks delivered directly to your room.</td>
+                                <td>24/7</td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                                <td>Spa</td>
+                                <td>Relaxing treatments including massages, facials, and more.</td>
+                                <td>9:00 AM - 8:00 PM</td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                                <td>Fitness Center</td>
+                                <td>Fully equipped gym for your workout needs.</td>
+                                <td>6:00 AM - 10:00 PM</td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                                <td>Swimming Pool</td>
+                                <td>Outdoor pool with sun loungers and a poolside bar.</td>
+                                <td>7:00 AM - 9:00 PM</td>
+                            </tr>
+                            <tr>
+                              <td>5</td>
+                                <td>Concierge</td>
+                                <td>Assistance with bookings, tours, and local information.</td>
+                                <td>24/7</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                  </div>
+
+                  <div class="row text-center">
+                    <h5>
+                      The master bedroom is a spacious retreat designed for comfort and elegance. It features a luxurious king-sized bed with premium linens, ensuring restful sleep. The room includes an ensuite bathroom equipped with modern fixtures, a walk-in shower, and a soaking tub. Large windows invite natural light, complemented by blackout curtains for privacy. Thoughtful touches such as ambient lighting, plush seating, and a functional workspace make it versatile for relaxation or productivity. A walk-in closet provides ample storage, while the decor incorporates neutral tones and stylish accents, creating a serene atmosphere. Perfect for unwinding after a long day.
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+         
     </section>
   </main>
 </body>
 
 </html>
+
+      
